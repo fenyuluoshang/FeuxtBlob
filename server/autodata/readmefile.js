@@ -1,0 +1,2 @@
+var config = require('../config')
+module.exports = `# My Person Blob Save Path\n\nMake With Public Project from [@fenyushiner/personblobServer](https://github.com/fenyuluoshang/personblobServer) \n\nThe Blob Master is ${config.hostmaster}\n\n`

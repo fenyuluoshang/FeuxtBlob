@@ -1,0 +1,31 @@
+{
+  "name": "feuxt-blob",
+  "version": "1.0.0",
+  "description": "My world-class Nuxt.js project",
+  "author": "纷羽",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/pwa": "^2.6.0",
+    "cross-env": "^5.2.0",
+    "element-ui": "^2.4.11",
+    "express": "^4.16.4",
+    "fs": "^0.0.1-security",
+    "hosted-git-info": "^2.7.1",
+    "marked": "^0.6.1",
+    "node-rsa": "^1.0.3",
+    "nuxt": "^2.4.0",
+    "sequelize": "^4.42.0",
+    "simple-git": "^1.107.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "sqlite3": "^4.0.6"
+  }
+}
