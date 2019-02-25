@@ -51,7 +51,16 @@ async function start() {
     extended: false
   }));
 
+  console.log('start server init')
+
   await initgit()
+
+  app.get('/helloword', (req, res, next) => {
+    res.json({
+      success: 1,
+      master: require('./config').hostmaster
+    })
+  })
 
   apicentter = require('./MainRouter')
   app.use(apicentter)
