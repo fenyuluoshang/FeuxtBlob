@@ -20,7 +20,9 @@
     "hosted-git-info": "^2.7.1",
     "marked": "^0.6.1",
     "node-rsa": "^1.0.3",
+    "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
+    "sass-loader": "^7.1.0",
     "sequelize": "^4.42.0",
     "simple-git": "^1.107.0"
   },
