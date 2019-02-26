@@ -13,11 +13,6 @@
       </h2>
     </div>
     <div class="list">
-      <!-- <ul class="list-body">
-        <a :href="'/blob/'+item.blobId" :key="item.blobId" v-for="item in indexpage">
-          <li class="blobitem">{{item.blobName}}</li>
-        </a>
-      </ul>-->
       <el-table :data="indexpage" @row-click="listclick">
         <el-table-column prop="blobId" label="ID"></el-table-column>
         <el-table-column prop="blobName" label="BLOB NAME"></el-table-column>
@@ -55,7 +50,6 @@ export default {
   async asyncData({ params, $axios, app }) {
     let data = await $axios.$get("helloword");
     let indexpage = await $axios.$get("indexpage");
-    app.head.tittle = data + "'s Blob";
     return { master: data.master, indexpage: indexpage.data, asyncInit: true };
   },
   data() {
@@ -104,11 +98,13 @@ $color2: #526488;
 }
 .bottom {
   text-align: left;
-  padding: 10px 10px;
+  width: 80%;
+  padding: 10px 10%;
   @media (min-width: $big-screen-width--min) {
-    padding: 10px 30px;
+    width: 76%;
+    padding: 10px 12%;
   }
-  width: 100%;
+
   position: absolute;
   bottom: 0;
   background-color: $color1;
