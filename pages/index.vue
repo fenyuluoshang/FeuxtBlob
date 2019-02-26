@@ -1,6 +1,7 @@
 <template>
   <section class="container">
     <div>
+      <logo class="logo"></logo>
       <h1 class="title">{{master}}'s Blob</h1>
       <h2 class="subtitle">
         This Blob has build with
@@ -43,8 +44,10 @@
 </template>
 
 <script>
+import logo from "~/components/Logo.vue";
+
 export default {
-  components: {},
+  components: { logo },
   async asyncData({ params, $axios, app }) {
     let data = await $axios.$get("helloword");
     let indexpage = await $axios.$get("indexpage");
@@ -66,6 +69,10 @@ export default {
 @import "~/assets/source.scss";
 $color1: #35495e;
 $color2: #526488;
+
+.logo{
+  padding-top: 10px;
+}
 
 .container {
   margin: 0 auto;

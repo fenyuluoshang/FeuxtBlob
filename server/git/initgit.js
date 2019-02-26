@@ -9,6 +9,7 @@ module.exports =
     if (!fs.existsSync('./data/.git')) {
       await gitinitSync()
     }
+    console.log('pull test')
     //拉取测试
     await gitdeal.pullSync()
     //验证关键文件初始化
