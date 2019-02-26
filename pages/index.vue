@@ -24,7 +24,11 @@
         <el-table-column prop="blobTypeName" label="BLOB TYPE"></el-table-column>
       </el-table>
       <div class="links">
-        <el-button plain>View More</el-button>
+        <a
+          href="./bloblist"
+          target="_blank"
+          class="el-button el-button--default is-plain link"
+        >View More</a>
         <a
           href="https://github.com/fenyuluoshang/FeuxtBlob"
           target="_blank"
@@ -70,8 +74,8 @@ export default {
 $color1: #35495e;
 $color2: #526488;
 
-.logo{
-  padding-top: 10px;
+.logo {
+  margin-top: 30px;
 }
 
 .container {

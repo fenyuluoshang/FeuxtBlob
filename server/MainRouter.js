@@ -64,6 +64,7 @@ router.get('/indexpage', async function (req, res, next) {
 
 router.get('/list', async function (req, res, next) {
     var type = req.query.type;
+    console.log(req.query.page)
     var page = parseInt(req.query.page)
     var list = type == null ? await db.bloblist.findAll({
         order: [
