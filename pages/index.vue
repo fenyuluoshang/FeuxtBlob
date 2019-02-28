@@ -2,14 +2,14 @@
   <section class="container">
     <div>
       <logo class="logo"></logo>
-      <h1 class="title">{{master}}'s Blob</h1>
+      <h1 class="title">{{master}}'s Blog</h1>
       <h2 class="subtitle">
-        This Blob has build with
+        This Blog has build with
         <a
           class="link"
-          href="https://github.com/fenyuluoshang/FeuxtBlob"
+          href="https://github.com/fenyuluoshang/FeuxtBlog"
           target="_blank"
-        >FeuxtBlob</a>
+        >FeuxtBlog</a>
       </h2>
     </div>
     <div class="list">
@@ -25,7 +25,7 @@
           class="el-button el-button--default is-plain link"
         >View More</a>
         <a
-          href="https://github.com/fenyuluoshang/FeuxtBlob"
+          href="https://github.com/fenyuluoshang/FeuxtBlog"
           target="_blank"
           class="el-button el-button--default is-plain link"
         >View Feuxt at github</a>
@@ -35,9 +35,9 @@
       This Blob has build with
       <a
         class="el-button el-button--text link"
-        href="https://github.com/fenyuluoshang/FeuxtBlob"
+        href="https://github.com/fenyuluoshang/FeuxtBlog"
         target="_blank"
-      >FeuxtBlob</a>
+      >FeuxtBlog</a>
     </div>
   </section>
 </template>
