@@ -23,7 +23,7 @@
     "node-sass": "^4.11.0",
     "nuxt": "^2.4.0",
     "sass-loader": "^7.1.0",
-    "sequelize": "^4.42.0",
+    "sequelize": "4",
     "simple-git": "^1.107.0",
     "sqlite3": "^4.0.6"
   },
