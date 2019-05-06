@@ -57,7 +57,7 @@ export default {
   },
   methods: {
     listclick(row, event, column) {
-      this.$router.push("blob/" + row.blobId);
+      location.href = "/blob/" + row.blobId;
     }
   }
 };

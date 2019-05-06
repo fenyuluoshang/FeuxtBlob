@@ -43,6 +43,7 @@ export default {
     },
     load() {
       this.page = this.page + 1;
+      this.$axios.baseURL = '/'
       this.$axios.$get("list?page=" + this.page).then(res => {
         res.data.forEach(val => {
           this.list.push(val);
