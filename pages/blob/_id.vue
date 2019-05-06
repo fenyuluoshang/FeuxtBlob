@@ -17,7 +17,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~/assets/source.scss";
 .container {
   @media (min-width: $big-screen-width--min) {

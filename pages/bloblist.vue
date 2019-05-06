@@ -5,12 +5,17 @@
       <el-table-column prop="blobName" label="BLOB NAME"></el-table-column>
       <el-table-column prop="blobTypeName" label="BLOB TYPE"></el-table-column>
     </el-table>
+
     <div class="links">
-      <el-button @click="load" plain>View More</el-button>
+      <el-button
+        @click="load"
+        plain
+      >View More</el-button>
     </div>
   </div>
 </template>
 <script>
+// import ListView from '@/components/ListView';
 export default {
   async asyncData({ params, $axios, app }) {
     let list = await $axios.$get("list?page=0");
@@ -31,6 +36,9 @@ export default {
         this.list.push(val);
       });
     }
+  },
+  components: {
+    // ListView
   }
 };
 </script>

@@ -57,26 +57,28 @@ export default {
   },
   methods: {
     listclick(row, event, column) {
-      location.href = "blob/" + row.blobId;
+      this.$router.push("blob/" + row.blobId);
     }
   }
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~/assets/source.scss";
 $color1: #35495e;
 $color2: #526488;
 
 .logo {
-  margin-top: 30px;
+  margin: 3vh 0;
 }
 
 .container {
+  display: flex;
   margin: 0 auto;
   min-height: 100vh;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .title {
@@ -97,16 +99,15 @@ $color2: #526488;
   padding-bottom: 15px;
 }
 .bottom {
+  margin-top: 3vh;
   text-align: left;
   width: 80%;
-  padding: 10px 10%;
+  line-height: 5vh;
+  padding: 2vh 10%;
   @media (min-width: $big-screen-width--min) {
     width: 76%;
-    padding: 10px 12%;
+    padding: 2vh 12%;
   }
-
-  position: absolute;
-  bottom: 0;
   background-color: $color1;
   color: #f0f0f0;
 }
