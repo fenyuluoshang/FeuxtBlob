@@ -7131,10 +7131,10 @@ send@0.16.2:
     range-parser "~1.2.0"
     statuses "~1.4.0"
 
-sequelize@^4.42.0:
-  version "4.43.0"
-  resolved "http://registry.npm.taobao.org/sequelize/download/sequelize-4.43.0.tgz#41c36c7684b0ea23ca7be1c3af3d65f2309a4ca6"
-  integrity sha1-QcNsdoSw6iPKe+HDrz1l8jCaTKY=
+sequelize@4:
+  version "4.43.2"
+  resolved "https://registry.npm.taobao.org/sequelize/download/sequelize-4.43.2.tgz#688e2579c64eb7e8de348941544ff2893db8eed6"
+  integrity sha1-aI4lecZOt+jeNIlBVE/yiT247tY=
   dependencies:
     bluebird "^3.5.0"
     cls-bluebird "^2.1.0"

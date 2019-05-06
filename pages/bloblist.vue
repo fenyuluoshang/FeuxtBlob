@@ -1,9 +1,21 @@
 <template>
   <div class="list container">
-    <el-table :data="list" @row-click="listclick">
-      <el-table-column prop="blobId" label="ID"></el-table-column>
-      <el-table-column prop="blobName" label="BLOB NAME"></el-table-column>
-      <el-table-column prop="blobTypeName" label="BLOB TYPE"></el-table-column>
+    <el-table
+      :data="list"
+      @row-click="listclick"
+    >
+      <el-table-column
+        prop="blobId"
+        label="ID"
+      ></el-table-column>
+      <el-table-column
+        prop="blobName"
+        label="BLOB NAME"
+      ></el-table-column>
+      <el-table-column
+        prop="blobTypeName"
+        label="BLOB TYPE"
+      ></el-table-column>
     </el-table>
 
     <div class="links">
@@ -29,11 +41,12 @@ export default {
     listclick(row, event, column) {
       location.href = "blob/" + row.blobId;
     },
-    async load() {
+    load() {
       this.page = this.page + 1;
-      let list = await this.$axios.$get("list?page=" + this.page);
-      list.data.forEach(val => {
-        this.list.push(val);
+      this.$axios.$get("list?page=" + this.page).then(res => {
+        res.data.forEach(val => {
+          this.list.push(val);
+        });
       });
     }
   },
