@@ -19,11 +19,15 @@
         <el-table-column prop="blobTypeName" label="BLOB TYPE"></el-table-column>
       </el-table>
       <div class="links">
-        <a
+        <!-- <a
           href="./bloblist"
           target="_blank"
           class="el-button el-button--default is-plain link"
-        >View More</a>
+        >View More</a>-->
+        <nuxt-link
+          to="/bloblist"
+          class="el-button el-button--default is-plain link"
+        >View More</nuxt-link>
         <a
           href="https://github.com/fenyuluoshang/FeuxtBlog"
           target="_blank"

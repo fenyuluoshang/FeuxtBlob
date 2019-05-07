@@ -47,7 +47,8 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    '@/plugins/element-ui'
+    '@/plugins/element-ui',
+    '@/plugins/axios'
   ],
 
   /*
@@ -58,13 +59,6 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
   ],
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    
-  },
-
   /*
    ** Build configuration
    */
